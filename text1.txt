@@ -1,2 +1,157 @@
- hello 
- hii 
+SCM ( Github for Source Code Management)
+
+Git:
+Version Control System is a tool that helps to track change in code
+
+Git is a Version Control System.
+It is: 
+Popular 
+Free & Open Source
+Fast & Scalable
+
+We use it for:
+1)To track the history
+2)To collaborate 
+
+
+Github:
+Website that allows developers to store and manage their code using Git.
+https://github.com
+
+Folder is called Repository
+Commit - final changes
+
+2 steps:
+Add and then Commit
+
+
+Configuring Git:
+
+git config —global user.name “My Name”
+
+git config —global user.mail “someone@email.com”
+
+git config —list
+
+
+Clone & Status:
+
+Clone - cloning a repository on our local machine
+		git clone <- some link ->
+
+Status - display the state of the code
+		git status
+
+Remote - GitHub
+Local - Personal Computer/Laptop
+
+cd - Change Directory
+ls -a  shows all the hidden files
+cd .. - to get out of directory
+
+Whenever we change contents of a file there are 2 process:
+1 - Add
+2 - Commit
+
+
+
+4 Types of Git Status:
+
+Untracked - New files that git doesn’t yet track
+Modified - Changed
+Staged - file is ready to be committed
+Unmodified - unchanged
+
+#When we add changes the file becomes staged
+#Then we commit the files to become unchanged
+
+
+Add & Commit:
+
+Add - adds new or changed files in your working directory to the Git staging area.
+
+	git add <- file name->
+
+Commit - It is the record of change
+	git commit -m “some message”
+
+
+Push Command:
+
+Push: upload local repo content to remote repo
+
+	git push origin main
+
+
+Init Command:
+
+init - used to create a new git repo
+
+	git init
+	git remote add origin <- link ->
+	git remote -v (to verify remote)
+	git branch (to check branch)
+	git branch -M main (to rename branch)
+	git push origin main
+
+
+WorkFlow:
+
+Local Git
+
+Make a GitHub repo
+Then clone
+Make changes
+Then add changes
+Then commit 
+And at last Push
+
+
+Branch Commands:
+
+git branch  (to check branch)
+git branch -M main  (to rename branch)
+git checkout <- branch name ->   (to navigate)
+git checkout <- new branch name ->  (to create new branch)
+git branch -d <- branch name ->  (to delete branch)
+
+git diff - is used to find the difference btw the committed file and the latest change file saved on computer.
+
+git diff --staged -> to compare previous 
+
+How we can delete a file from git repository:
+
+git rm —cached <- name of file ->
+
+git ls-files
+
+file, do not commit repository anduse ls-files command to see the status of repository files.
+
+
+echo “This is the content inside readme file”>>README.md 
+(md means markdown file - to show content in more presentable way)
+
+
+Challenge:
+
+Open Git bash.
+Go to a drive.
+Create a new folder named “GitCourse” through Git bash.
+Create a new file “README.md” through commands and add Pseudo text in it.
+
+cd D:/
+mkdir GitCourse
+ls
+cd GitCourse
+echo “This is the content inside readme file”>>README.md 
+ls
+git init
+cat README.md
+git add README.md
+git commit -m "This is the content to upload README.md file to the local computer repository"
+git status
+git branch -M main
+ssh -keygen -o
+cd
+cd .ssh
+ls -a 
